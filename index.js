@@ -13,7 +13,7 @@ const Anthropic = require('@anthropic-ai/sdk')
 const {tavily} = require('@tavily/core')
 require('dotenv').config()
 
-//2. Create Anthropic Client
+//2.  Clients
 const client = new Anthropic()
 const tvly = tavily({ apiKey: process.env.TAVILY_API_KEY})
 
