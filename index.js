@@ -60,6 +60,7 @@ async function runAgent() {
         const response = await client.messages.create({
             model: 'claude-sonnet-4-6',
             max_tokens: 1024,
+            system: `Today's data is ${new Date().toDateString()}.`,
             tools: tools,
             messages: messages
         })
